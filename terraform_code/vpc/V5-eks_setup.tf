@@ -109,7 +109,7 @@ resource "aws_route_table_association" "dpw-rta-public-subnet-2" {
 
   module "sgs" {
     source = "../sg_eks"
-    vpc_id     =     aws_vpc.dpp-vpc.id
+    vpc_id     =     aws_vpc.dpw-vpc.id
  }
 
   module "eks" {
